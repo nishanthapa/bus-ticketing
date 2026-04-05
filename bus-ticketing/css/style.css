@@ -1,0 +1,244 @@
+
+.navbar-brand img {
+    height: 50px;     
+    width: 70px;      
+    background: transparent;
+    display: block;
+}
+
+
+
+
+
+:root {
+    --bg: #d5e7b5;       
+    --text: #6e1a37;     
+    --primary: #ae2448;  
+    --secondary: #72baa9;
+    --card-bg: #ffffff;  
+}
+
+/* DARK MODE */
+.dark {
+    --bg: #6e1a37;       
+    --text: #d5e7b5;    
+    --primary: #ae2448; 
+    --secondary: #72baa9;
+    --card-bg: #ae2448; 
+}
+
+
+/* GLOBAL */
+body {
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+/* NAVBAR */
+.navbar {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    
+}
+
+
+
+.hero {
+    height: 60vh;
+    background: linear-gradient(rgba(110,26,55,0.5), rgba(174,36,72,0.5)),
+                url('../images/bus.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel-item {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.carousel-caption {
+    background: rgba(110,26,55,0.4); /* semi-transparent overlay for readability */
+    padding: 1rem 2rem;
+    border-radius: 12px;
+}
+
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--d5e7b5, #d5e7b5); /* Light accent for text */
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    color: var(--d5e7b5, #d5e7b5);
+}
+
+/* Hero / Bus Search Section */
+.bus-search-section {
+    background: linear-gradient(135deg, #FF7E5F, #FFB199); /* soft orange gradient */
+    color: #fff;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.hero-text p.lead {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===== GLOBAL FONTS ===== */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/* Hero section */
+.hero-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 1.2;
+}
+
+.hero-text p.lead {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.hero-text h1 {
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+/* Bus search card */
+/* Bus Cards */
+.bus-card {
+    background: var(--card-bg);
+    border-radius: 14px;
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.bus-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Price */
+.price {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* Badges */
+.badge {
+    background: #f1f1f1;
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* AC / Non-AC tags */
+.tag {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ac {
+    background: #ffe5e5;
+    color: #e74c3c;
+}
+
+.non-ac {
+    background: #fff3cd;
+    color: #f39c12;
+}
+
+/* Dark mode */
+.dark .bus-card {
+    background: #ae2448;
+    color: #d5e7b5;
+}
+
+.dark .badge {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+.dark .tag.ac {
+    background: #ff6b6b;
+    color: #fff;
+}
+
+.dark .tag.non-ac {
+    background: #f1c40f;
+    color: #000;
+}
+
+/* Buttons inside cards */
+
+
+.card .btn-primary {
+    background-color: var(--primary);
+    border: none;
+}
+
+.card .btn-primary:hover {
+    background-color: var(--secondary);
+    color: #fff;
+}
+
+
+.dark .card {
+    background: #ae2448;
+    color: var(--d5e7b5);
+}
+
+.dark .carousel-caption {
+    background: rgba(99, 36, 58, 0.6);
+}
+
+
+
+/* ===============================
+   FOOTER
+=============================== */
+.footer {
+    background: var(--primary); /* AE2448 from palette */
+    color: var(--d5e7b5);
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.footer h5 {
+    font-weight: bold;
+    color: var(--d5e7b5);
+}
+
+.footer-link {
+    color: var(--d5e7b5);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+}
